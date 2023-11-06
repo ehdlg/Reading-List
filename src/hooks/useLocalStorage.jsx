@@ -5,8 +5,9 @@ export function useLocalStorage(key, defaultValue){
     try{
       const item = localStorage.getItem(key);
       if(item){
-        return item;
+        return JSON.parse(item);
       }
+      localStorage.setItem(key, JSON.stringify(defaultValue));
       return defaultValue;
     }catch(err){
       console.error(err);
