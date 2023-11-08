@@ -5,7 +5,8 @@ import Filters from './Filters';
 
 const INITIAL_FILTERS = {
   genre: 'all',
-  minPages: 0
+  minPages: 0,
+  search: ''
 };
 
 function Books({ books, handleBookClick }) {
@@ -19,7 +20,11 @@ function Books({ books, handleBookClick }) {
   const filteredBooks = books.filter((book) => {
     return (
       book.pages >= filters.minPages &&
-      (filters.genre === 'all' || book.genre === filters.genre)
+      (filters.genre === 'all' || book.genre === filters.genre) &&
+      (filters.search === '' ||
+        book.title
+          .toLocaleLowerCase()
+          .indexOf(filters.search.toLocaleLowerCase()) !== -1)
     );
   });
 
