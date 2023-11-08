@@ -1,8 +1,13 @@
-# React + Vite
+# Lista de Lectura - Pruebas Técnicas
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este proyecto es parte de [pruebastecnicas.com](https://pruebastecnicas.com/) y se trata de una aplicación web simple para administrar una lista de lectura. Puedes agregar y eliminar libros de la lista de lectura y usar unos filtros simples para filtrar los resultados.
 
-Currently, two official plugins are available:
+## Características
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Agregar libros a la lista de lectura.
+- Eliminar libros de la lista de lectura.
+- Filtrar los libros por género y páginas.
+
+## Tecnologías Utilizadas
+
+- React: Utilizado para la interfaz de usuario.
